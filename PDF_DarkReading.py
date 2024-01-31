@@ -65,7 +65,7 @@ class PDFNightModeConverter:
 		self.export_pdf_path = ""  # 用于存储导出路径
 		self.poppler_path = self.get_poppler_path( )
 		self.chosen_gray_value = 49  # 默认背景灰度值
-		self.chosen_text_gray_value = 240  # 新增变量，用于存储文字的灰度值，默认为240
+		self.chosen_text_gray_value = 240  # 用于存储文字的灰度值，默认为240
 		self.processing = False  # 文件是否正在处理
 		self.preview_image = None  # 用于在Canvas上显示的PIL图像
 		self.text_color = '#F0F0F0'  # 灰度值240
@@ -74,7 +74,7 @@ class PDFNightModeConverter:
 		self.setup_ui( )
 	
 	def setup_ui( self ):
-		# 全局字体设置，选择适合中文的字体
+		# 全局字体设置
 		global_font = ('Microsoft YaHei', 16)
 		
 		# 设置背景颜色和文字颜色
